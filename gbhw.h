@@ -15,7 +15,9 @@
 #include "libgbs.h"
 #include "gbcpu.h"
 
-#define GBHW_CLOCK 4194304
+#define SCALE 1
+
+#define GBHW_CLOCK 4194304/SCALE
 
 #define GBHW_INTRAM_SIZE 0x2000
 #define GBHW_INTRAM_MASK (GBHW_INTRAM_SIZE - 1)

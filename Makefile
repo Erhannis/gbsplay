@@ -169,9 +169,9 @@ EXTRA_UNINSTALL += uninstall-contrib
 endif
 
 # test built binary?
-ifeq ($(build_test),yes)
-TEST_TARGETS += test
-endif
+#ifeq ($(build_test),yes)
+#TEST_TARGETS += test
+#endif
 
 # Cygwin automatically adds .exe to binaries.
 # We should notice that or we can't rm the files later!

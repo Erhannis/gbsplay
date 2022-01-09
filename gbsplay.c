@@ -200,6 +200,13 @@ static void printstatus(struct gbs *gbs)
 		       notestring(status, 3), volstring(status->ch[3].vol),
 		       reverse_vol(volstring(status->lvol/1024)),
 		       volstring(status->rvol/1024));
+		// printf("  %05ld %s  %05ld %s  %05ld %s  %05ld %s  [%s|%s]\n",
+		//        FREQ(status->ch[0].div_tc), volstring(status->ch[0].vol),
+		//        FREQ(status->ch[1].div_tc), volstring(status->ch[1].vol),
+		//        FREQ(status->ch[2].div_tc), volstring(status->ch[2].vol),
+		//        FREQ(status->ch[3].div_tc), volstring(status->ch[3].vol),
+		//        reverse_vol(volstring(status->lvol/1024)),
+		//        volstring(status->rvol/1024));
 	} else {
 		puts("");
 	}
